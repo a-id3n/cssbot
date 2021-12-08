@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html id="demo-page">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Single Color Image</title>
+    <link rel="stylesheet" href="the.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>Single Color Image</h1>
+      <p>Generate a one-color PNG of whatever size you want.</p>
+      <p>
+        Check out the <a href="/api.html">API</a>. Made with love by
+        <a href="https://evanhahn.com">Evan Hahn</a>.
+      </p>
+    </header>
+
+    <form action="/image.png">
+      <div class="form-control">
+        <label for="color-input">Color</label>
+        <input
+          id="color-input"
+          name="color"
+          value="#ffffff"
+          placeholder="#ffffff"
+          type="color"
+          maxlength="7"
+          autofocus
+          required
+          pattern="#?[a-fA-F0-9]{6}"
+        />
+      </div>
+      <div class="form-control">
+        <label for="width-input">Width</label>
+        <input
+          id="width-input"
+          name="width"
+          value="100"
+          placeholder="100"
+          min="1"
+          max="5000"
+          maxlength="4"
+          type="number"
+          required
+        />
+      </div>
+      <div class="form-control">
+        <label for="height-input">Height</label>
+        <input
+          id="height-input"
+          name="height"
+          value="100"
+          placeholder="100"
+          min="1"
+          max="5000"
+          maxlength="4"
+          type="number"
+          required
+        />
+      </div>
+      <input type="submit" value="Make" />
+    </form>
+
+    <script src="the.js"></script>
+  </body>
+</html>

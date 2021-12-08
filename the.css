@@ -1,0 +1,270 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --- */
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: #fff;
+  background-color: #000;
+  text-shadow: 0;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #000;
+  text-shadow: 0;
+}
+
+html {
+  height: 100%;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16pt;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+
+h2 {
+  margin: 1em 0;
+  font-size: 1.8em;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: inline-block;
+  width: 100px;
+  height: 2em;
+  font: inherit;
+  text-align: center;
+  border: 2px solid #000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+p,
+ol,
+pre {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+code,
+pre {
+  font-family: SourceCodePro, Inconsolata, Consolas, Monaco, monospace;
+  white-space: pre-wrap;
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word;
+  word-break: break-word;
+  background-color: #eff7ef;
+}
+
+pre {
+  padding: 1em;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  border: 0;
+}
+
+#demo-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#demo-page body {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+#demo-page form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#demo-page form > * {
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+#demo-page .form-control {
+  display: flex;
+  align-items: center;
+}
+
+#demo-page .form-control label {
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+#api-page body {
+  margin: 2em auto;
+  width: 95%;
+  max-width: 600px;
+}
